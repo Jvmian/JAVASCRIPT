@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro exercício</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            font: normal 2em arial;
+        }
+        h1 {
+            text-align: center;
+            background-color: rgb(62, 48, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Olá, mundo!</p><!---->
+    <p>Já me livrei da maldição !!</p>
+    <script>
+           // abre uma janela com alerta 
+           // abre uma janelinha confirmação
+          var n1 = Number.parseInt(window.prompt('Digite um número :'));//float p numero com ponto
+          var n2 = Number.parseFloat(window.prompt('Digite outro número :'));
+          var n3 = Number(window.prompt('digite um terceiro número :'))
+          var s = ( n1 + n2 + n3);
+          window.alert('A soma entre eles é : '+ String(s));// + para adição, mas também + para concatenação
+          window.alert(`A soma entre (${n1}, ${n2}, ${n3}) é igual a : ${s}`) 
+
+
+    </script>
+</body>
+</html>

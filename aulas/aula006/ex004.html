@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nome</title>
+    <style>
+        *{
+            font:normal 30px arial;
+        }
+        span{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é seu nome?');
+        document.writeln (`Olá, <span>${nome}</span>! Seu nome tem ${nome.length} letras.<br/>`); 
+        document.writeln(`Seu nome em letras maiúsculas ${nome.toUpperCase()}.<br/>`)
+        document.writeln(`Seu nome em letras minúsculas ${nome.toLowerCase()}.`)
+        //n1.toLocaleString('pt-BR',{style : 'currency', currency:'BRL'}) colocar valor monetario
+        //-----n1.toFixed(2)----.replace('.',',') trocar ponto por virgula
+        // n1.toFixed(2) 2 casas fixas
+    </script>
+    
+</body>
+</html>
