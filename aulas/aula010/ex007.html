@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <style>
+        body {
+            font: normal 1.4em arial;
+        }
+        input{
+            font: normal 1em arial;
+            width: 100px;
+        }
+        input[type=button]{
+            margin-top: 10px;
+        }
+        div#resultado{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <label for="itxtn1">Digite um número :</label>
+    <input type="number" name="txtn1" id="itxtn1"><br>+<br>
+    <label for="itxtn2">Digite outro número :</label>
+    <input type="number" name="txtn2" id="itxtn2"><br>
+    <input type="button" value="Somar" id="jv" onclick="somar()">
+    <div id="resultado">Resultado</div>
+    <script>
+        var jv = window.document.getElementById('jv')
+        jv.addEventListener ('mouseenter',entrar)
+        jv.addEventListener ('mouseout',sair)
+        function entrar(){
+            jv.style.backgroundColor = 'red'
+        }
+        function sair(){
+            jv.style.backgroundColor = 'white'
+        }
+        function somar(){
+        var itxtn1 = window.document.getElementById('itxtn1')
+        var itxtn2 = window.document.querySelector('input#itxtn2')
+        var resultado = window.document.getElementById('resultado')
+        var n1 = Number(itxtn1.value)
+        var n2 = Number(itxtn2.value)
+        var s = n1 + n2
+        resultado.innerHTML = `A soma entre ${n1} e ${n2} é : <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>

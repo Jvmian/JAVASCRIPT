@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            color: wheat;
+            font: normal 1em arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com dom em js</h1>
+    <p id="i">Iniciando os estudos com <strong>dom</strong> em js</p>
+    <p>aqui vai o resultado</p>
+    <p class="pezinho"> so p ter mais um</p>
+    <div name="div">Clique em mim</div><br>
+    <script>
+        /*
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var i = window.document.getElementById ('i')
+        i.style.backgroundColor = 'green'
+        window.document.getElementById('i').innerText = "ola"
+        i.innerText = 'Estou aguardando...'
+        window.document.getElementsByName('div')[0].innerText = 'Sou pika'
+        */
+        var corpo = window.document.body
+        corpo.style.background = '#ef57ab'
+        var div = window.document.getElementsByName('div')[0]
+        div.style.color = 'red'
+        var selec = window.document.querySelector('p.pezinho')
+        selec.style.color = 'black'
+        selec.style.width = '90px'
+        selec.style.background = 'red'
+    
+    </script>
+</body>
+</html>
