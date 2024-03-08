@@ -49,6 +49,10 @@ section > #foto {
     padding-top: 25px;
     text-align: center;
 }
+section > #boa {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.795);
+} 
 footer{
 background-color: rgba(0, 0, 0, 0.055);
 color: rgb(0, 0, 0);
