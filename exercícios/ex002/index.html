@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>verificacao</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,15 +13,16 @@
     <section>
         <label for="inasc">Quando você nasceu ? </label>
         <input type="number" id="inasc" name="nasc" required>
-        <p>
+        <p id="p">
             Sexo :   
             <label for="imas">Masculino</label>
             <input type="radio" name="sexo" id="imas" checked>
             <label for="ifem">Feminino</label>
             <input type="radio" name="sexo" id="ifem">
         </p>
-        <p><input type="button" value="Verificar" onclick="verificar()"></p>
-        <div id="resultadol">Preencha os dados acima para obter o resultado!</div>
+        <p><input type="button" value="Verificar" onclick="verificar()" id="teste"></p>
+        <div id="resultado">Preencha os dados acima para obter o resultado!</div>
+        <!--img#foto-->
     </section>
     <footer><p>@joaovldm</p></footer>
     <script src="script.js"></script>
