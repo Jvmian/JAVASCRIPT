@@ -4,8 +4,8 @@ var result = window.document.getElementById('resultado')
 var boaa = window.document.getElementById('boa')
 var img = window.document.getElementById('imagem')
 var data = new Date()
-// data.getHours()
-var hora = 20
+var hora = data.getHours()
+
 result.innerHTML = `<p>Agora são <strong>${hora} horas</strong>.</p>`
 if (hora >= 5 && hora <= 12){
     boaa.innerHTML = `<p><strong>Bom dia, ${nome}!</strong></p>`
