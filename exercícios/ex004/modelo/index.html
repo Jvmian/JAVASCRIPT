@@ -3,19 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabuada</title>
+    <title>Contagem</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     
 </head>
 <body>
     <header>
-        <h1>Tabuada</h1>
+        <h1>Vamos contar</h1>
     </header>
     <section>
         
-            <div id="form">Aqui vai aparecer a hora</div>
-            <div id="tabuada">
-                <img src="" alt="">
+            <div id="form">
+                <p>
+                    <label for="iinicio">Início :</label>
+                    <input type="number"  id="iinicio">
+                </p>
+                <p>
+                    <label for="ifim">Fim :</label>
+                    <input type="number"  id="ifim">
+                </p>
+                <p>
+                    <label for="icontar">Contar em :</label>
+                    <input type="number"  id="icontar">
+                </p>
+                <input type="button" value="Calcular" onclick="calcular()">
+            </div>
+            
+            <div id="result">
+                <p>Preparando a contagem...</p>
             </div>
         
     </section>
