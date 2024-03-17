@@ -1,19 +1,18 @@
-function calcular (){
+function tabuada(){
 let num = window.document.getElementById('inum')
 let resultado = window.document.getElementById('result')
-
-
+let testando = window.document.getElementById('teste')
     if (num.value.length == 0){
-    resultado.innerHTML = 'Impossível Calcular'
+    testando.innerHTML = 'Impossível Calcular'
     window.alert('[ERRO] Coloque um número válido!')
     } else{
         let numero = Number(num.value)
-        resultado.innerHTML = ''
-                if (numero > 0){
+                if (numero > 0 || numero < 0){
+                         resultado.innerHTML = ''
                          for (let c = 1; c <= 10; c++){
-                            let  item = document.creatElement('option')
+                            let item = document.createElement('option')
                             item.text = `${numero} X ${c} = ${numero*c}`
-                            item.value = `result${c}`
+                            //item.value = `result${c}`
                             resultado.appendChild(item)
                         } 
                        } 
@@ -24,9 +23,9 @@ let resultado = window.document.getElementById('result')
 /* 
 let n = number(num.value)
 let c = 1
-result.innerHTML = ''
+resultado.innerHTML = ''
 while (c <= 10){
-    let  item = document.createlement('option')
+    let  item = document.createElement('option')
     item.text = `${numero} X ${c} = ${numero*c}`
     resultado.appendChild(item)
     c++
