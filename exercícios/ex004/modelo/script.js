@@ -1,35 +1,38 @@
 function calcular (){
-let inicio = window.document.getElementById('iinicio')
-let fim = window.document.getElementById('ifim')
-let contar = window.document.getElementById('icontar')
+let num = window.document.getElementById('inum')
 let resultado = window.document.getElementById('result')
 
 
-    if (inicio.value.length == 0 || fim.value.length == 0 || contar == 0){
-    resultado.innerHTML = 'Impossível Contar'
-    window.alert('[ERRO] Coloque uma contagem válida!')
+    if (num.value.length == 0){
+    resultado.innerHTML = 'Impossível Calcular'
+    window.alert('[ERRO] Coloque um número válido!')
     } else{
-        resultado.innerHTML = "Contando: <br> "
-        let ini = Number(inicio.value)
-        let f = Number(fim.value)
-        let cont = Number(contar.value)
-            if (cont <=0 ){
-                window.alert('Passo inválido!')
-                alert('Considerando Passo 1')
-                cont = 1
-            }
-                if (ini < f){
-                         // contagem crescente
-                         for (let c = ini; c <= f; c+= cont){
-                           resultado.innerHTML += ` ${c} \u{1F449}`
+        let numero = Number(num.value)
+        resultado.innerHTML = ''
+                if (numero > 0){
+                         for (let c = 1; c <= 10; c++){
+                            let  item = document.creatElement('option')
+                            item.text = `${numero} X ${c} = ${numero*c}`
+                            item.value = `result${c}`
+                            resultado.appendChild(item)
                         } 
-                       } else {
-                          // contagem regressiva 
-                          for(let c = ini; c >= f; c-= cont){
-                          resultado.innerHTML += ` ${c} \u{1F449}`
-                          } 
-                          }
-        resultado.innerHTML += '\u{1F3C1}' 
+                       } 
+       // resultado.innerHTML += '\u{1F3C1}' 
     }
 
-}   
+}
+/* 
+let n = number(num.value)
+let c = 1
+result.innerHTML = ''
+while (c <= 10){
+    let  item = document.createlement('option')
+    item.text = `${numero} X ${c} = ${numero*c}`
+    resultado.appendChild(item)
+    c++
+}
+
+
+
+
+*/   
